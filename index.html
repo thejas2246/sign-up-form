@@ -5,6 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up form</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="image-container">
+          <img src="./assets/images/sideimage.jpg" alt="plant image" />
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="heading-container">
+          <h1>
+            This is not a real online service!You know you need something like
+            this in your life to help you realize your deepest dreams.Sign up to
+            get started
+          </h1>
+          <h1>You know you want it</h1>
+        </div>
+        <form action="">
+          <div class="form-container">
+            <h2>Lets do it</h2>
+            <fieldset>
+              <div class="user-first-name">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Joe" required />
+              </div>
+              <div>
+                <label for="second-name">Second Name</label>
+                <input
+                  type="text"
+                  name="second-name"
+                  id="second-name"
+                  placeholder="Linder"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="user@gmail.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone-number">Phone Number</label>
+                <input
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="1234567890"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div>
+                <label for="correct-password">Correct Password</label>
+                <input
+                  type="correct-password"
+                  name="correct-password"
+                  id="correct-password"
+                  required
+                />
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="submit-button">submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
