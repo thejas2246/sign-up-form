@@ -124,3 +124,8 @@ input::placeholder{
     width: 100%;
     text-align: center;
 }
+input:focus,#password:focus,#correct-password:focus{
+    border:1px solid rgb(17, 0, 255);
+    box-shadow: 2px 2px 5px black;
+    outline: none;
+}
