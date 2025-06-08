@@ -6,6 +6,9 @@
     font-style: normal;
 
 }
+:root{
+    --input-border-color:#E5E7EB;
+}
 *{
     padding: 0;
 }
@@ -74,7 +77,7 @@ h2{
 }
 
 input{padding: 5px 10px;
-border-color:#E5E7EB;
+border-color:var(--input-border-color);
 border-style: solid;
 border-radius: 4px;
 }
@@ -106,4 +109,10 @@ border-radius: 4px;
 }
 input::placeholder{
     color: rgb(209, 208, 208);
+}
+#password:invalid,#correct-password:invalid{
+    border-color: red;
+}
+#password:placeholder-shown,#correct-password:placeholder-shown{
+    border-color: var(--input-border-color);
 }
