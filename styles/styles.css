@@ -112,6 +112,7 @@ input::placeholder{
 }
 #password:invalid,#correct-password:invalid{
     border-color: red;
+    content: "hi";
 }
 #password:placeholder-shown,#correct-password:placeholder-shown{
     border-color: var(--input-border-color);
